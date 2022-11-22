@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ea-connect</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="../main.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-white">
+            <a href="/home/" class="navbar-brand"><b>EA-Connect</b></a>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                        <button class="btn btn-outline-primary" type="button" id="logout">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+
+        <div class="container">
+            <div class="main-body">
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div class="row">
+                                        <div>
+                                            <h6 class="mb-0">User avatar</h6>
+                                        </div>
+                                        <br>
+                                        <div class="imgUp">
+                                            <div class="imagePreview" id="avatar">
+                
+                                            </div>
+                                            <label class="btn btn-primary">
+                                                Change Avatar
+                                                <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6 class="mb-0">Full name</h6>
+                                        <input type="text" class="form-control" id="user-full-name">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6 class="mb-0">Email</h6>
+                                        <input type="text" class="form-control" id="email">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6 class="mb-0">Phone</h6>
+                                        <input type="text" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6 class="mb-0">Education</h6>
+                                        <input type="text" class="form-control" id="education">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <button class="btn btn-success" type="button" id="button-save">
+                                            Save change
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-mb-6">
+                        <div class="card-header">
+                            <b>About me</b>
+                        </div>
+                        <textarea class="form-control" id="about-me"></textarea>
+                    </div>
+
+                    <div class="card-mb-6">
+                        <div class="card-header">
+                            <b>Experiences</b>
+                        </div>
+                        <textarea class="form-control" id="experiences"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="../../script.js"></script>
+</html>

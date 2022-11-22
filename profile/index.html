@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ea-connect</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="../main.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-white">
+            <a href="/home/" class="navbar-brand"><b>EA-Connect</b></a>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                        <button class="btn btn-outline-primary" type="button" id="logout">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+
+        <div class="container">
+            <div class="main-body">
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div class="row">
+                                        <div>
+                                            <h6 class="mb-0">User avatar</h6>
+                                        </div>
+                                        <br>
+                                        <img id="avatar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Full name</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary" id="user-full-name">
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Email</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary" id="email">
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Phone</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary" id="phone">
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Education</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary" id="education">
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row" id="my-profile-function">
+                                    <div class="col-sm-12">
+                                        <button class="btn btn-primary" type="button" id="button-edit">
+                                            Edit
+                                        </button>
+                                        <button class="btn btn-outline-primary" type="button" id="new-organization">New organization</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-mb-6">
+                        <div class="card-header">
+                            <b>About me</b>
+                        </div>
+                        <div class="card-body" id="about-me">
+                            
+                        </div>
+                    </div>
+
+                    <div class="card-mb-6">
+                        <div class="card-header">
+                            <b>Experiences</b>
+                        </div>
+                        <div class="card-body" id="experiences">
+                            
+                        </div>
+                    </div>
+
+                    <div class="card-mb-6">
+                        <div class="card-header">
+                            <b>Organizations</b>
+                        </div>
+                        <div class="card-body" id="organizations">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="../script.js"></script>
+</html>

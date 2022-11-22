@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ea-connect</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="../main.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-white">
+            <a href="/home/" class="navbar-brand"><b>EA-Connect</b></a>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                        <button class="btn btn-outline-primary" type="button" id="logout">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+
+        <div class="container" style="margin-top: 20px">
+            <div class="card">
+                <div class="card-header">
+                    <h5>New Organization</h5>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h6 class="mb-0">Organization icon</h6>
+                        </div>
+                        <div class="col-sm-2 imgUp">
+                            <div class="imagePreview" id="organization-logo">
+
+                            </div>
+                            <label class="btn btn-primary">
+                                Upload Avatar
+                                <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h6 class="mb-0">Organization name *</h6>
+                        </div>
+                        <input class="col-sm form-control form-control-sm" type="text" id="organization-name">
+                            
+                        </input>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h6 class="mb-0">Organization description *</h6>
+                        <div class="form-floating" style="margin-top: 20px; margin-right: 40px;">
+                            <textarea class="form-control" id="organization-description" placeholder="..." style="height: 150px"></textarea>
+                            <label for="floatingTextarea">Description</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <b style="color: #ea4343"> (*) Required fields </b>
+                    <button class="btn btn-primary" id="post-organization" style="margin-top: 20px;">Create</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="../script.js"></script>
+</html>
