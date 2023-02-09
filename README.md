@@ -3,7 +3,7 @@
 ## Run proxy:
 
     npm install -g local-cors-proxy
-    lcp --proxyUrl http://52.185.168.67:6969/
+    lcp --proxyUrl http://52.185.168.67:6969/ (this server has closed!)
 
 ## Run virtual server:
 
